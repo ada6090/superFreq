@@ -31,7 +31,7 @@
 #'
 runDE = function(bamFiles, sampleNames, externalNormalBams, captureRegions, Rdirectory, plotDirectory, normalRdirectory,
   settings=list(), genome='hg19', cpus=1, mode='exome',
-  forceRedoFit=F, forceRedoCount=F, forceRedoNormalCount=F, isPairedEnd=TRUE, countReadPairs=TRUE) {
+  forceRedoFit=F, forceRedoCount=F, forceRedoNormalCount=F, isPairedEnd=FALSE, countReadPairs=TRUE) {
   catLog('Starting differential coverage analysis by sample.\n')
 
   fitSaveFile = paste0(Rdirectory, '/fit.Rdata')
